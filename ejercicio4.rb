@@ -1,8 +1,7 @@
 class Dog
-  attr_accessor :propiedades
-  def initialize(propiedades)
-  	@propiedades = propiedades
-  	propiedades = {:nombre => 'Bethoven', :raza => 'San Bernardo', :color => 'café' }
+  attr_reader :nombre
+  def initialize(object)
+    @nombre = object[:nombre]
   end
 
   def ladrar
@@ -10,5 +9,7 @@ class Dog
   end
 end
 
-dog1 = Dog.new
+propiedades = { :nombre => 'Bethoven', :breed => 'San Bernardo', :color => 'Café' }
+
+dog1 = Dog.new(propiedades)
 dog1.ladrar
