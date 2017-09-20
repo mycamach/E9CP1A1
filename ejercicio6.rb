@@ -2,7 +2,7 @@ class Product
   attr_reader :name, :sizes
   def initialize(name, *sizes)
     @name = name
-    @sizes = sizes.map(&:to_f)
+    @sizes = sizes.map(&:to_i)
   end
 
   def average

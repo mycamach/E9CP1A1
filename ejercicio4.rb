@@ -11,5 +11,7 @@ end
 
 propiedades = { :nombre => 'Bethoven', :breed => 'San Bernardo', :color => 'Café' }
 
+# {nombre: 'Bethovern'...} Notación nueva
+
 dog1 = Dog.new(propiedades)
 dog1.ladrar

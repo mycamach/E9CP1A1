@@ -4,13 +4,12 @@ class Morseable
   end
 
   def generate_hash(number)
-    # Esto es una aberración y debe ser refactorizado!
-    h = {0 => '-----', 1 => '.----', 2 => '..---', 3 => '...--', 4 => '....-', 5 => '.....', 6 => '-....', 7 => '--...', 8 => '---..', 9 => '----.'}
+    h = { 0 => '-----', 1 => '.----', 2 => '..---', 3 => '...--', 4 => '....-', 5 => '.....', 6 => '-....', 7 => '--...', 8 => '---..', 9 => '----.' }
     puts h[number]
   end
   
   def to_morse
-    self.generate_hash(@number)
+    generate_hash(@number)
   end
 end
 
